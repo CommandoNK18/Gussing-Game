@@ -17,8 +17,7 @@ startBtn.addEventListener("click",()=>{
    startWorker();
    
 })
-
-
+//images array
 let y=()=>{
    const images=[
       '/images/Charles-Chaplin.jpg','/images/Robert-De-Niro.jpg',
@@ -35,7 +34,7 @@ let imageGen=()=>{
   yVal=y();
   console.log(yVal);
   optionGen(yVal);
- // return yVal;
+ 
 }
 
 
@@ -113,19 +112,7 @@ function ansMatch(userChoice){
     })
 }
 
-/*function webWorker(){
-   //web workers
-   timer.innerText=5;
-const worker = new Worker('worker.js');
-worker.onmessage = function(event) {
- // console.log('Worker said: ' + event.data);
-  timer.innerText=event.data;
-  
-};
-worker.postMessage(timer.innerText);
-;
-}*/
-
+//web workers
 var w;
 
 function startWorker() {
